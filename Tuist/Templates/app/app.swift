@@ -23,7 +23,7 @@ private let template = Template(
         .string(path: "Projects/\(nameAttribute)/Tests/\(nameAttribute)Tests.swift", contents:
                 """
                 import XCTest
-                @testable import \(nameAttribute)Testing
+                @testable import \(nameAttribute)
 
                 final class \(nameAttribute)Tests: XCTestCase {
 

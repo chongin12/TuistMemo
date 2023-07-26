@@ -63,6 +63,7 @@ extension Project {
                    sources: ["Example/**"],
                    resources: ["Example/Resources/**"],
                    dependencies: [
+                    .target(name: "\(name)"),
                     .target(name: "\(name)Testing")
                    ]
                   ),
@@ -74,6 +75,7 @@ extension Project {
                    sources: ["Tests/**"],
                    resources: ["Tests/Resources/**"],
                    dependencies: [
+                    .target(name: "\(name)"),
                     .target(name: "\(name)Testing"),
                     .xctest
                    ],
@@ -86,7 +88,7 @@ extension Project {
                    infoPlist: .default,
                    sources: ["Testing/**"],
                    dependencies: [
-                    .target(name: "\(name)")
+                    .target(name: "\(name)Interface")
                    ]
                   ),
             Target(name: "\(name)",
@@ -125,6 +127,7 @@ extension Project {
                    sources: ["Example/**"],
                    resources: ["Example/Resources/**"],
                    dependencies: [
+                    .target(name: "\(name)"),
                     .target(name: "\(name)Testing")
                    ]
                   ),
@@ -136,6 +139,7 @@ extension Project {
                    sources: ["Tests/**"],
                    resources: ["Tests/Resources/**"],
                    dependencies: [
+                    .target(name: "\(name)"),
                     .target(name: "\(name)Testing"),
                     .xctest
                    ],
@@ -148,7 +152,7 @@ extension Project {
                    infoPlist: .default,
                    sources: ["Testing/**"],
                    dependencies: [
-                    .target(name: "\(name)")
+                    .target(name: "\(name)Interface")
                    ]
                   ),
             Target(name: "\(name)",
@@ -188,6 +192,7 @@ extension Project {
                    sources: ["Example/**"],
                    resources: ["Example/Resources/**"],
                    dependencies: [
+                    .target(name: "\(name)"),
                     .target(name: "\(name)Testing")
                    ]
                   ),
@@ -199,6 +204,7 @@ extension Project {
                    sources: ["Tests/**"],
                    resources: ["Tests/Resources/**"],
                    dependencies: [
+                    .target(name: "\(name)"),
                     .target(name: "\(name)Testing"),
                     .xctest
                    ],
@@ -211,7 +217,7 @@ extension Project {
                    infoPlist: .default,
                    sources: ["Testing/**"],
                    dependencies: [
-                    .target(name: "\(name)")
+                    .target(name: "\(name)Interface")
                    ]
                   ),
             Target(name: "\(name)",
