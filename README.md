@@ -34,7 +34,8 @@ Feature를 생성하면 의존 관계가 미리 정의된 5가지 타겟이 자�
 3. Testing : Mock 데이터를 구성합니다.
 4. Source : 주요 기능 및 뷰를 담당합니다. Injector를 받는 Coordinator 뷰는 여기서 구현해야 합니다. (Coordinator는 화면의 시작점을 의미합니다)
 5. Interface : 추상화를 담당합니다. 다른 Feature에서 사용할 수 있는 모델, 프로토콜, Injector 등이 위치합니다.
-![dependency](https://github.com/chongin12/TuistMemo/assets/19565940/0bc5b984-0f44-4a5c-936a-84d47524ee76)
+
+![image](https://github.com/chongin12/TuistMemo/assets/19565940/0c68adb9-31f4-471e-afa7-15f718ab9013)
 
 ### How to add new module
 1. 추가하고 싶은 Feature Type이 무엇인지 판단합니다. (Product or Foundation)
