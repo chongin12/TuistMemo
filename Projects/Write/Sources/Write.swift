@@ -45,7 +45,6 @@ public struct WriteCoordinator: View {
     public var injector: WriteInjector
     public init(injector: WriteInjector) {
         self.injector = injector
-        self.memo = injector.memo
         self._memo = .init(initialValue: injector.memo)
         print("memo title : \(injector.memo.title), body : \(injector.memo.body)")
     }

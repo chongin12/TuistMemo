@@ -50,13 +50,13 @@ struct Home_Previews: PreviewProvider {
     }
 }
 
-public class HomeCoordinator {
+public struct HomeCoordinator: View {
     public var injector: HomeInjector
     public init(injector: HomeInjector) {
         self.injector = injector
     }
     
-    public func show() -> some View {
+    public var body: some View {
         Home()
     }
 }
